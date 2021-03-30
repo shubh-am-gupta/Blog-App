@@ -5,6 +5,7 @@
 .blog_pageHeader {
   letter-spacing: -1px;
   font-size: 35px;
+  text-align: center;
 }
 
 .blogs {
@@ -18,7 +19,7 @@
   min-width: 300px;
   margin: auto;
   background: white;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 20px 1px rgb(167, 162, 162);
   height: 100%;
   text-decoration: none;
   color: black;
@@ -72,6 +73,9 @@
 }
 
 .no_blogs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
   font-weight: 500;
   line-height: 1.5em;
