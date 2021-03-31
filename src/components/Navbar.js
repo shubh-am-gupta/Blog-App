@@ -27,6 +27,12 @@ const Navbar = () => {
     dispatch(setInput(inputValue));
   };
 
+  const handleKeyPress = e => {
+    if (e.key === "Enter") {
+      handleClick(e);
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar_header">Blog World 💬</div>
@@ -37,6 +43,7 @@ const Navbar = () => {
             placeholder="Search for a blog"
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
+            onKeyPress={handleKeyPress}
           />
           <button className="submit" onClick={handleClick}>
             Search
